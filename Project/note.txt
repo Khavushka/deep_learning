@@ -1,0 +1,15 @@
+In light of the recent COVID-19 pandemic, we will take a look at one of the servere symptoms of the disease, pneumonia. The dataset we have consists of x-ray images of patients who either has pneumonia or are healthy, and you must develop a model to distinguish them. The model will
+
+Task 1 - The Dataset
+All images are x-ray images taken in the chest region of children aged 1-5 from the Women and Children's medical center. There are 1100 images of healthy humans, as well as 1100 images of people with pneumonia. Keep in mind, that the image format is .jpeg, and there are 3 color channels. You need to organize the data into directories as shown on Figure 1. You need to determine the training/validation/testing split yourselves, but need to justify your split choice. 
+
+Task 2 - Create a custom dataset class and a dataloader
+In this assignment, you will be working with a substantial dataset of images. You will need to implement a data loader using PyTorch's data loaders and create a custom dataset class to efficiently manage and preprocess the data. Furthermore, you should enhance the model's performance by applying data augmentation. Remember that all images should be of same size during training, validation and testing. Which data augmentation is up to you, but you need to justify your choice in a comment.
+
+Task 3 - Construction the network
+After successfully creating both custom dataset and the dataloader, you need to create a neural network, and use the data loader to feed the network. The architecture, complexity and regularization are all up to you, but you need to justify your choices in comments. you are more than welcome to replace already known architectures or architectures we made during the cource, but you are NOT allowed to use any pretrained networks. You are also not allowed to use any training data that is not included on ItsLearning. 
+
+Carefully consider which hyperparameters to test and strategically try to find the optimal architecture for the task. In the comments, please describe your method for the optimization and your choice of hyperparameters. Remember that there is an underlying competition, and the highest accuracy wins. The competition will be measured based on the saved model, so make sure to submit only the best one!
+
+Task 4 - Visualizing your results 
+Finally, you must visualize some aspects of your model. It can be a graph of the training/validation performance, visualization of the filters or feature maps, or anything you can thin of. This has to be saved as an image file and along with your model and code. 
